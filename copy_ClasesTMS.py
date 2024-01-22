@@ -10,7 +10,7 @@ from astropy.time import Time, TimeDelta
 from PyAstronomy import pyasl
 import datetime
 import astropy.units as u
-
+#######_______________ definicion de clases_____________
 
 def timedef(times_sec,f_sampling):
     t = Time(times_sec, format='fits', scale='utc')
