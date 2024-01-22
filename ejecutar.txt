@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=10
+#SBATCH --time=03:00:00
+#SBATCH --job-name=toast1000Hz
+#SBATCH --output=%j.out
+#SBATCH --error=%j.err
+module load python
+source /scratch/aarriero/main_docs/cmb/bin/activate
+python -m pip install numpy==1.23.1	
+time python copy_mainTMS.py
